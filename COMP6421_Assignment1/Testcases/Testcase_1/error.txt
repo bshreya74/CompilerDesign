@@ -1,0 +1,3 @@
+Lexical error: (4,1) unknown token.
+Lexical error: (5,11) badly formed float; expected digit after '.' got 'a' instead
+Lexical error: (7,1) unclosed multi-line comment.

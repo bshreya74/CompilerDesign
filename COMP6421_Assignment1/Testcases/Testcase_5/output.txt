@@ -1,0 +1,10 @@
+
+<(1,1) 'main' 'main'> <(1,5) '(' '<Open Bracket>'> <(1,6) ')' '<close bracket>'> 
+<(2,1) '{' '<open parenthesis>'> 
+<(3,1) 'int' 'integer'> <(3,9) identifier 'a'> <(3,11) '=' '<equals>'> <(3,13) integer '123'> <(3,16) ';' '<semicolon>'> 
+<(4,1) 'int' 'integer'> <(4,9) identifier 'b'> <(4,11) '=' '<equals>'> <(4,13) integer '45'> <(4,15) ';' '<semicolon>'> 
+<(5,1) 'if' 'if'> <(5,3) '(' '<Open Bracket>'> <(5,4) identifier 'a'> <(5,5) '<=' '<less than or equals>'> <(5,7) identifier 'b'> <(5,8) ')' '<close bracket>'> <(5,10) 'then' 'then'> 
+<(6,1) 'for' 'for'> <(6,5) '(' '<Open Bracket>'> <(6,7) 'int' 'integer'> <(6,15) identifier 'i'> <(6,17) '=' '<equals>'> <(6,19) integer '0' ERROR> <(6,20) ';' '<semicolon>'> <(6,22) identifier 'i'> <(6,23) '<=' '<less than or equals>'> <(6,26) identifier 'a'> <(6,27) ';' '<semicolon>'> <(6,29) identifier 'i'> <(6,30) '+' '<addition>'> <(6,31) '+' '<addition>'> <(6,32) ')' '<close bracket>'> 
+<(7,1) 'write' 'write'> <(7,7) identifier 'i'> <(7,8) ';' '<semicolon>'> 
+<(8,1) 'else' 'else'> <(8,6) 'return' 'return'> <(8,12) ';' '<semicolon>'> 
+<(9,1) '}' '<close parenthesis>'> <(9,2) End of file 'null'> 

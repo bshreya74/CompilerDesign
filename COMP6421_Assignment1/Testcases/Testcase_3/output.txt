@@ -1,0 +1,10 @@
+
+<(1,1) 'class' 'class'> <(1,7) identifier 'hello'> 
+<(2,1) '{' '<open parenthesis>'> 
+<(3,1) 'main' 'main'> <(3,5) '(' '<Open Bracket>'> <(3,6) ')' '<close bracket>'> 
+<(4,1) '{' '<open parenthesis>'> 
+<(5,1) 'float' 'float'> <(5,7) identifier 'd'> <(5,9) '=' '<equals>'> <(5,11) unknown '_' ERROR> <(5,12) identifier 'abc1'> <(5,16) ';' '<semicolon>'> 
+<(6,1) 'float' 'float'> <(6,7) identifier 'x'> <(6,9) '=' '<equals>'> <(6,11) float '456.0'> <(6,16) ';' '<semicolon>'> 
+<(7,1) 'int' 'integer'> <(7,9) identifier 's'> <(7,11) '=' '<equals>'> <(7,13) identifier 'a'> <(7,14) ';' '<semicolon>'> 
+<(8,1) 'return' 'return'> <(8,7) ';' '<semicolon>'> 
+<(9,1) '}' '<close parenthesis>'> <(9,2) End of file 'null'> 

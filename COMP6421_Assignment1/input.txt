@@ -1,0 +1,11 @@
+0.0001
+0.0001000
+0123
+
+main()
+{
+integer a = 1;
+integer b = 2;
+float c = 234.65;
+int d = 43.6;
+}

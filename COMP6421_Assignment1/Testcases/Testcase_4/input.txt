@@ -1,0 +1,9 @@
+class x
+{
+main()
+{
+integer a = 5;
+integer b = 6;
+integer c = a + b;
+}
+}

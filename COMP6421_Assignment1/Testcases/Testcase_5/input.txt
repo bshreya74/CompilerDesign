@@ -1,0 +1,9 @@
+main()
+{
+integer a = 123;
+integer b = 45;
+if(a<=b) then
+for ( integer i = 0; i<= a; i++)
+write i;
+else return;
+}

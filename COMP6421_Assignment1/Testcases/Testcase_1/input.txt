@@ -1,0 +1,8 @@
+main()
+{
+abc;
+_1abc;
+float d = 123.a;
+// this is comment
+/* multi line
+}

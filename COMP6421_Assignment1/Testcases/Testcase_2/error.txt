@@ -1,0 +1,3 @@
+Lexical error: (1,13) Error: first digit should be nonzero.
+Lexical error: (3,7) unknown token.
+Lexical error: (4,10) Error: first digit should be nonzero.

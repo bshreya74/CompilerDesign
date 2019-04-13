@@ -1,0 +1,9 @@
+class hello
+{
+main()
+{
+float d = _abc1;
+float x = 456.0;
+integer s = a;
+return;
+}

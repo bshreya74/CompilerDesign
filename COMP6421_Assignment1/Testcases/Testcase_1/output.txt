@@ -1,0 +1,9 @@
+
+<(1,1) 'main' 'main'> <(1,5) '(' '<Open Bracket>'> <(1,6) ')' '<close bracket>'> 
+<(2,1) '{' '<open parenthesis>'> 
+<(3,1) identifier 'abc'> <(3,4) ';' '<semicolon>'> 
+<(4,1) unknown '_' ERROR> <(4,2) integer '1'> <(4,3) identifier 'abc'> <(4,6) ';' '<semicolon>'> 
+<(5,1) 'float' 'float'> <(5,7) identifier 'd'> <(5,9) '=' '<equals>'> <(5,11) float '123.a' ERROR> <(5,16) ';' '<semicolon>'> 
+
+
+<(8,3) End of file 'null'> <(8,3) End of file 'null'> <(8,3) End of file 'null'> 

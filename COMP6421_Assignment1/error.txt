@@ -1,0 +1,9 @@
+Lexical error: (1,1) Error: first digit should be nonzero.
+Lexical error: (1,3) Error: first digit should be nonzero.
+Lexical error: (1,4) Error: first digit should be nonzero.
+Lexical error: (1,5) Error: first digit should be nonzero.
+Lexical error: (2,1) Error: first digit should be nonzero.
+Lexical error: (2,3) Error: first digit should be nonzero.
+Lexical error: (2,4) Error: first digit should be nonzero.
+Lexical error: (2,5) Error: first digit should be nonzero.
+Lexical error: (3,1) Error: first digit should be nonzero.
