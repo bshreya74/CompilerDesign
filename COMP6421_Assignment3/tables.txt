@@ -1,0 +1,58 @@
+==========Symbol Table:Global==========
+[A, class, null, A, null]
+[B, class, null, B, null]
+[C, class, null, C, null]
+[D, class, null, D, null]
+[f1, function, B, f1, null]
+[f2, function, float, f2, null]
+[f, function, integer, f, null]
+[ff, function, integer, ff, null]
+[main, function, null, main, null]
+------------------------------------------------------------------------
+==========Symbol Table:A==========
+[a, variable, integer:[], null, Global]
+[b, variable, B:[], null, Global]
+[f1, function, B, A:f1, Global]
+------------------------------------------------------------------------
+==========Symbol Table:A:f1==========
+------------------------------------------------------------------------
+==========Symbol Table:B==========
+[c, variable, C:[], null, Global]
+[x, variable, D:[1, 1], null, Global]
+[a, variable, integer:[1, 1], null, Global]
+------------------------------------------------------------------------
+==========Symbol Table:C==========
+[d, variable, D:[], null, Global]
+[t, variable, integer:[], null, Global]
+[f2, function, float, C:f2, Global]
+------------------------------------------------------------------------
+==========Symbol Table:C:f2==========
+[r, parameter, float:[], null, C]
+------------------------------------------------------------------------
+==========Symbol Table:D==========
+[a, variable, float:[], null, Global]
+[f, function, integer, D:f, Global]
+------------------------------------------------------------------------
+==========Symbol Table:D:f==========
+------------------------------------------------------------------------
+==========Symbol Table:Global:f1==========
+[t1, variable, integer:[], null, Global]
+[t2, variable, float:[], null, Global]
+[t3, variable, null:[], null, Global]
+------------------------------------------------------------------------
+==========Symbol Table:Global:f2==========
+------------------------------------------------------------------------
+==========Symbol Table:Global:f==========
+------------------------------------------------------------------------
+==========Symbol Table:Global:ff==========
+[d, variable, integer:[], null, Global]
+------------------------------------------------------------------------
+==========Symbol Table:Global:main==========
+[a1, variable, integer:[], null, Global]
+[a2, variable, integer:[1, 1], null, Global]
+[b1, variable, float:[], null, Global]
+[b2, variable, float:[1, 1], null, Global]
+[w1, variable, null:[], null, Global]
+[w2, variable, null:[1, 1], null, Global]
+[w3, variable, null:[], null, Global]
+------------------------------------------------------------------------

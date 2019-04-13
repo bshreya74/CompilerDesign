@@ -1,0 +1,8 @@
+integer findMax(integer array[100]){
+	integer maxValue;
+	integer idx;
+	maxValue = array[100];
+	idx = 99;
+	idx = idx - 1;
+	maxValue = array[idx];
+	return (maxValue);};

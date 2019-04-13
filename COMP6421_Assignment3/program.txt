@@ -1,0 +1,31 @@
+class MyClass1 {
+integer mc1v1[2][4];
+float mc1v2;
+MyClass2 mc1v3[3];
+integer mc1f1(integer p1, MyClass2 p2[3]);
+};
+
+class MyClass2 {
+integer mc1v1[2][4];
+float fp1;
+MyClass2 m2[3];
+};
+
+integer mc1f1(int p1, MyClass2 p2[3]) {
+MyClass2 fv1[3];
+};
+
+integer f2(MyClass1 f2p1[3]) {
+integer mc1v1;
+};
+
+float f1() {
+integer fv2;
+MyClass1 fv1[3];
+};
+
+main {
+integer m1;
+float m2[3][2];
+MyClass2 m3[2];
+};
