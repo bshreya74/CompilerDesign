@@ -1,0 +1,56 @@
+<(1,1) 'class' 'class'> <(1,7) 'id' 'A'> <(1,8) '{' '<open parenthesis>'> 
+<(2,5) 'integer' 'integer'> <(2,13) 'id' 'a'> <(2,14) ';' '<semicolon>'> 
+<(3,5) 'id' 'B'> <(3,7) 'id' 'b'> <(3,8) ';' '<semicolon>'> 
+<(4,5) 'id' 'B'> <(4,7) 'id' 'f1'> <(4,9) '(' '<Open Bracket>'> <(4,10) ')' '<close bracket>'> <(4,11) ';' '<semicolon>'> 
+
+<(6,1) '}' '<close parenthesis>'> <(6,2) ';' '<semicolon>'> 
+<(7,1) 'class' 'class'> <(7,7) 'id' 'B'> <(7,8) '{' '<open parenthesis>'> 
+<(8,5) 'id' 'C'> <(8,7) 'id' 'c'> <(8,8) ';' '<semicolon>'> 
+<(9,5) 'id' 'D'> <(9,7) 'id' 'x'> <(9,8) '[' '<open sq bracket>'> <(9,9) 'intNum' '2'> <(9,10) ']' '<close sq bracket>'> <(9,11) '[' '<open sq bracket>'> <(9,12) 'intNum' '2'> <(9,13) ']' '<close sq bracket>'> <(9,14) ';' '<semicolon>'> 
+<(10,5) 'integer' 'integer'> <(10,13) 'id' 'a'> <(10,14) '[' '<open sq bracket>'> <(10,15) 'intNum' '2'> <(10,16) ']' '<close sq bracket>'> <(10,17) '[' '<open sq bracket>'> <(10,18) 'intNum' '3'> <(10,19) ']' '<close sq bracket>'> <(10,20) ';' '<semicolon>'> 
+
+<(12,1) '}' '<close parenthesis>'> <(12,2) ';' '<semicolon>'> 
+
+<(14,1) 'class' 'class'> <(14,7) 'id' 'C'> <(14,8) '{' '<open parenthesis>'> 
+<(15,5) 'id' 'D'> <(15,7) 'id' 'd'> <(15,8) ';' '<semicolon>'> 
+<(16,5) 'integer' 'integer'> <(16,13) 'id' 't'> <(16,14) ';' '<semicolon>'> 
+<(17,5) 'float' 'float'> <(17,11) 'id' 'f2'> <(17,13) '(' '<Open Bracket>'> <(17,14) 'float' 'float'> <(17,20) 'id' 'r'> <(17,22) ')' '<close bracket>'> <(17,23) ';' '<semicolon>'> 
+<(18,1) '}' '<close parenthesis>'> <(18,2) ';' '<semicolon>'> 
+
+<(20,1) 'class' 'class'> <(20,7) 'id' 'D'> <(20,8) '{' '<open parenthesis>'> 
+<(21,5) 'float' 'float'> <(21,11) 'id' 'a'> <(21,12) ';' '<semicolon>'> 
+<(22,5) 'integer' 'integer'> <(22,13) 'id' 'f'> <(22,14) '(' '<Open Bracket>'> <(22,15) ')' '<close bracket>'> <(22,16) ';' '<semicolon>'> 
+
+<(24,1) '}' '<close parenthesis>'> <(24,2) ';' '<semicolon>'> 
+
+<(26,1) 'id' 'B'> <(26,3) 'id' 'f1'> <(26,5) '(' '<Open Bracket>'> <(26,6) ')' '<close bracket>'> <(26,7) '{' '<open parenthesis>'> 
+<(27,5) 'integer' 'integer'> <(27,13) 'id' 't1'> <(27,15) ';' '<semicolon>'> 
+<(28,5) 'float' 'float'> <(28,11) 'id' 't2'> <(28,13) ';' '<semicolon>'> 
+<(29,5) 'id' 'B'> <(29,7) 'id' 't3'> <(29,9) ';' '<semicolon>'> 
+<(30,5) 'return' 'return'> <(30,12) '(' '<Open Bracket>'> <(30,13) 'id' 't3'> <(30,15) ')' '<close bracket>'> <(30,16) ';' '<semicolon>'> 
+<(31,1) '}' '<close parenthesis>'> <(31,2) ';' '<semicolon>'> 
+
+<(33,1) 'float' 'float'> <(33,7) 'id' 'f2'> <(33,9) '(' '<Open Bracket>'> <(33,10) 'float' 'float'> <(33,16) 'id' 'r'> <(33,18) ')' '<close bracket>'> <(33,19) '{' '<open parenthesis>'> 
+<(34,5) 'return' 'return'> <(34,11) '(' '<Open Bracket>'> <(34,12) 'id' 'r'> <(34,13) ')' '<close bracket>'> <(34,14) ';' '<semicolon>'> 
+<(35,1) '}' '<close parenthesis>'> <(35,2) ';' '<semicolon>'> 
+
+<(37,1) 'integer' 'integer'> <(37,9) 'id' 'f'> <(37,10) '(' '<Open Bracket>'> <(37,11) ')' '<close bracket>'> <(37,12) '{' '<open parenthesis>'> <(37,13) 'return' 'return'> <(37,20) '(' '<Open Bracket>'> <(37,21) 'intNum' '12'> <(37,23) ')' '<close bracket>'> <(37,24) ';' '<semicolon>'> <(37,25) '}' '<close parenthesis>'> <(37,26) ';' '<semicolon>'> 
+
+<(39,1) 'integer' 'integer'> <(39,9) 'id' 'ff'> <(39,11) '(' '<Open Bracket>'> <(39,12) ')' '<close bracket>'> <(39,13) '{' '<open parenthesis>'> 
+<(40,1) 'integer' 'integer'> <(40,9) 'id' 'd'> <(40,10) ';' '<semicolon>'> 
+<(41,1) 'return' 'return'> <(41,8) '(' '<Open Bracket>'> <(41,9) 'id' 'd'> <(41,10) ')' '<close bracket>'> <(41,11) ';' '<semicolon>'> <(41,12) '}' '<close parenthesis>'> <(41,13) ';' '<semicolon>'> 
+
+
+<(44,1) 'main' 'main'> <(44,5) '{' '<open parenthesis>'> 
+<(45,5) 'integer' 'integer'> <(45,13) 'id' 'a1'> <(45,15) ';' '<semicolon>'> 
+<(46,5) 'integer' 'integer'> <(46,13) 'id' 'a2'> <(46,15) '[' '<open sq bracket>'> <(46,16) 'intNum' '2'> <(46,17) ']' '<close sq bracket>'> <(46,18) '[' '<open sq bracket>'> <(46,19) 'intNum' '5'> <(46,20) ']' '<close sq bracket>'> <(46,21) ';' '<semicolon>'> 
+<(47,5) 'float' 'float'> <(47,11) 'id' 'b1'> <(47,13) ';' '<semicolon>'> 
+<(48,5) 'float' 'float'> <(48,11) 'id' 'b2'> <(48,13) '[' '<open sq bracket>'> <(48,14) 'intNum' '3'> <(48,15) ']' '<close sq bracket>'> <(48,16) '[' '<open sq bracket>'> <(48,17) 'intNum' '6'> <(48,18) ']' '<close sq bracket>'> <(48,19) ';' '<semicolon>'> 
+<(49,5) 'id' 'A'> <(49,7) 'id' 'w1'> <(49,9) ';' '<semicolon>'> 
+<(50,5) 'id' 'B'> <(50,7) 'id' 'w2'> <(50,9) '[' '<open sq bracket>'> <(50,10) 'intNum' '3'> <(50,11) ']' '<close sq bracket>'> <(50,12) '[' '<open sq bracket>'> <(50,13) 'intNum' '4'> <(50,14) ']' '<close sq bracket>'> <(50,15) ';' '<semicolon>'> 
+<(51,5) 'id' 'C'> <(51,7) 'id' 'w3'> <(51,9) ';' '<semicolon>'> 
+
+
+
+<(55,1) '}' '<close parenthesis>'> <(55,2) ';' '<semicolon>'> 
+<(56,1) End of file 'null'> <(56,1) End of file 'null'> 
