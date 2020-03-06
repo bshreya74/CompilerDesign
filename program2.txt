@@ -1,0 +1,44 @@
+class myClass_3 {
+};
+
+class myClass_2 {
+
+	
+	myClass_1 a;
+	
+	float c[2];
+	
+	
+};
+
+class myClass_1 {
+	
+	integer a;
+	integer b;		
+	integer c(integer x[2][3], float y, myClass_3 z);
+};
+
+integer c(integer x[2][3], float y, myClass_3 z) {
+	
+		
+		integer a;
+		
+		integer c[2][4];
+		integer d[3];
+		
+		myClass_3 b;
+		
+
+		fly e;
+		
+		
+		
+	};
+
+main {
+
+	integer a;
+	integer b;
+	
+
+};

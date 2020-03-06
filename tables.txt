@@ -1,0 +1,70 @@
+**********First Pass begins**********
+**********Create Symbol Table**********
+
+==========Symbol Table:Global==========
+[A, class, null, [], A, null, 0]
+[B, class, null, [], B, null, 0]
+[C, class, null, [], C, null, 0]
+[D, class, null, [], D, null, 0]
+[f1, function, B, [], Global:f1, null, 0]
+[f2, function, float, [], Global:f2, null, 0]
+[f, function, integer, [], Global:f, null, 0]
+[ff, function, integer, [], Global:ff, null, 0]
+[main, function, null, [], Global:main, null, 24]
+------------------------------------------------------------------------
+==========Symbol Table:A==========
+[a, variable, integer, [], null, Global, 0]
+[b, variable, B, [], null, Global, 0]
+[f1, function, B, [], A:f1, Global, 0]
+------------------------------------------------------------------------
+==========Symbol Table:A:f1==========
+------------------------------------------------------------------------
+==========Symbol Table:B==========
+[c, variable, C, [], null, Global, 0]
+[x, variable, D, [1, 1], null, Global, 0]
+[a, variable, integer, [1, 1], null, Global, 0]
+------------------------------------------------------------------------
+==========Symbol Table:C==========
+[d, variable, D, [], null, Global, 0]
+[t, variable, integer, [], null, Global, 0]
+[f2, function, float, [], C:f2, Global, 0]
+------------------------------------------------------------------------
+==========Symbol Table:C:f2==========
+[r, parameter, float, [], null, C, 4]
+------------------------------------------------------------------------
+==========Symbol Table:D==========
+[a, variable, float, [], null, Global, 0]
+[f, function, integer, [], D:f, Global, 0]
+------------------------------------------------------------------------
+==========Symbol Table:D:f==========
+------------------------------------------------------------------------
+==========Symbol Table:Global:f1==========
+[t1, variable, integer, [], null, Global, 4]
+[t1, variable, integer, [], null, Global, 0]
+[t2, variable, float, [], null, Global, 4]
+[t2, variable, float, [], null, Global, 0]
+[t3, variable, B, [], null, Global, 0]
+------------------------------------------------------------------------
+==========Symbol Table:Global:f2==========
+------------------------------------------------------------------------
+==========Symbol Table:Global:f==========
+------------------------------------------------------------------------
+==========Symbol Table:Global:ff==========
+[d, variable, integer, [], null, Global, 4]
+[d, variable, integer, [], null, Global, 0]
+------------------------------------------------------------------------
+==========Symbol Table:Global:main==========
+[a1, variable, integer, [], null, Global, 4]
+[a1, variable, integer, [], null, Global, 0]
+[a2, variable, integer, [1, 1], null, Global, 8]
+[a2, variable, integer, [1, 1], null, Global, 0]
+[b1, variable, float, [], null, Global, 4]
+[b1, variable, float, [], null, Global, 0]
+[b2, variable, float, [1, 1], null, Global, 8]
+[b2, variable, float, [1, 1], null, Global, 0]
+[w1, variable, A, [], null, Global, 0]
+[w2, variable, B, [1, 1], null, Global, 0]
+[w3, variable, C, [], null, Global, 0]
+------------------------------------------------------------------------
+
+**********First Pass ends**********

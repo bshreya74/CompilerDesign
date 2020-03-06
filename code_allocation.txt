@@ -1,0 +1,55 @@
+class A{
+	integer a;
+	B b;
+	B f1();
+
+};
+class B{
+	C c;
+	D x[2][2];
+	integer a[2][3];
+	
+};
+
+class C{
+	D d;
+	integer t;
+	float f2(float r );
+};
+
+class D{
+	float a;
+	integer f();
+
+};
+
+B A::f1(){
+	integer t1;
+	float t2;
+	B t3;
+	return (t3);
+};
+
+float C::f2(float r ){
+	return(r);
+};
+
+integer D::f(){return (12);};
+
+integer ff(){
+integer d;
+return(d);};
+
+
+main{
+	integer a1;
+	integer a2[2][5];
+	float b1;
+	float b2[3][6];
+	A w1;
+	B w2[3][4];
+	C w3;
+	
+
+
+};
