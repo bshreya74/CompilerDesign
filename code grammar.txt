@@ -1,0 +1,63 @@
+prog() -> classDeclList funcDefList 'main' code.pro() funcBody code.halt() ';'
+classDeclList() -> classDecl classDeclList | EPSILON
+funcDefList() -> funcDef funcDefList | EPSILON
+classDecl() -> 'class' 'id' inheritedList '{' memberList '}' ';'
+inheritedList() -> ':' 'id' idInClassDeclList | EPSILON
+idInClassDeclList() -> ',' 'id' idInClassDeclList | EPSILON
+memberList() -> type 'id' memberListNew | EPSILON
+memberListNew()-> varDecl code.varGenerate(id, classname+":"+tablename, holder) memberList | funcDecl funcInClass
+funcInClass() -> type 'id' funcInClassNew | EPSILON
+funcInClassNew()-> funcDecl funcInClass
+funcDecl()	-> code.func(funcName, classname) '(' fParamsList ')' ';'
+funcHead() -> type funcHeadId  code.func(funcname, classname)'(' fParamsList ')'
+funcHeadId()	-> 'id' scopeSpec
+scopeSpec() -> 'sr' 'id' | EPSILON
+funcDef() -> funcHead funcBody code.funj()';'
+funcBody() -> '{' varStatinFunc '}'
+varStatinFunc() -> varStat varStatinFunc | varStatNew varStatinFuncNew | EPSILON
+varStatinFuncNew()	-> varStatNew varStatinFuncNew | EPSILON
+varStat() -> typeNew 'id' varDecl code.varGenerate(id, classname+":"+tablename, holder)
+varStatNew() -> 'id' varStatTail | statementOther
+varStatTail() -> 'id' varDecl code.varGenerate(id, classname+":"+tablename, holder) | indiceList idnestList assignStatTail ';' | '(' aParams ')' idnestList assignStatTail ';'     
+assignStatTail() -> assignOp expr code.assGenerate(nest, right_nest, right_id, classname+":"+tablename, holder)  
+typeNew() -> 'float' | 'integer'
+statementOther() -> 'if' '(' expr ')' 'then' statBlock 'else' statBlock ';' | 'for' '(' type 'id' assignOp expr ';' relExpr ';' assignStat ')' statBlock ';' | 'read' '(' variable ')' ';' | 'write' '(' expr ')' ';' | 'return' '(' expr ')' ';' code.return_value(nest, id, tablename, classname, holder)    
+statementList()-> statement statementList | EPSILON
+varDecl() -> arraySizeList ';'  
+arraySizeList()-> arraySize arraySizeList | EPSILON
+statement() -> assignStat ';' | 'if' '(' expr ')' 'then' statBlock 'else' statBlock ';' | 'for' '(' type 'id' assignOp expr ';' relExpr ';' assignStat ')' statBlock ';' | 'read' '(' variable ')' ';' | 'write' '(' expr ')' ';' | 'return' '(' expr ')' ';'   code.return_value(nest, id, tablename, classname, holder) 
+assignStat() -> 'id' assignOp expr  code.assGenerate(nest, right_nest, right_id, classname+":"+tablename, holder)  
+statBlock() -> '{' statementList '}' | statement | EPSILON
+expr(SemRec nest) -> arithExpr exprNew
+exprNew() -> relOp arithExpr | EPSILON 
+relExpr()-> arithExpr relOp arithExpr  
+arithExpr(nest) -> term arithExprNew
+arithExprNew(right_nest) -> addOp term arithExprNew | EPSILON
+sign() -> '+' | '-'
+term(nest) -> factor termNew
+termNew(right_nest) -> multOp factor termNew | EPSILON 
+factor(nest) -> varFunc | 'intNum' | 'floatNum' | '(' arithExpr ')' | 'not' factor | sign factor
+variable() -> 'id' variableNew  
+variableNew(nest) -> indiceList idnestList
+varFunc() -> 'id' indiceList idnestListNew varFuncTail    
+varFuncTail() -> '(' aParams ')' varFuncTail2 | EPSILON
+varFuncTail2() -> idnest | EPSILON
+idnestListNew() -> idnestNew idnestListNew | EPSILON
+indiceList() -> indice addIndex(nest, id) indiceList | EPSILON
+idnestNew() -> '.' idnestNewTail
+idnestNewTail(nest) -> 'id' indiceList | '(' aParams ')'
+indice() -> '[' arithExpr ']'
+idnestList(nest) -> idnest idnestList | EPSILON
+idnest(nest) -> '.' 'id' nest(nest, id) indiceList
+arraySize() -> '[' 'intNum' ']'
+type() -> 'integer' | 'float' | 'id'
+fParamsList() -> type 'id' arraySizeList code.varGenerate(id, classname+":"+tablename, holder) fParamsTailList | EPSILON
+fParamsTailList()-> fParamsTail fParamsTailList | EPSILON
+aParams(nest)-> expr aParamsTailList | EPSILON
+aParamsTailList(nest) -> aParamsTail aParamsTailList | EPSILON
+fParamsTail() -> ',' type 'id' arraySizeList  code.varGenerate(id, classname+":"+tablename, holder)
+aParamsTail(nest) -> ',' expr
+assignOp -> '='
+relOp()	-> 'eq' | 'neq' | 'lt' | 'gt' | 'leq' | 'geq'
+addOp() -> '+' | '-' | 'or' 
+multOp() -> '*' | '/' | 'and'
